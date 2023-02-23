@@ -22,12 +22,12 @@ public class ManagerController {
 
 
     @GetMapping
-    public List<Manager> getAllEmployees(){
+    public List<Manager> getAllManagers(){
         return managerService.getAllManagers();
     }
 
     // Endpoint to register an employee as a manager
-    @PostMapping("/{employeeId}/register")
+    @PostMapping("/{employeeId}/register-manager")
     public ResponseEntity<?> registerManager(
             @PathVariable("employeeId") Long employeeId,
             @RequestBody Manager manager) {

@@ -36,8 +36,8 @@ public class Employee {
     @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
     private Manager managers;
 
-//    @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
-//    private Doctor doctors;
+    @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
+    private Doctor doctors;
 
 
 }
